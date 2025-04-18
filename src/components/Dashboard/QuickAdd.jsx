@@ -35,11 +35,14 @@ export default function QuickAdd() {
           <div className="w-[40%] bg-[#EDF0F6] flex flex-col items-center rounded-xl p-4 absolute bottom-[1px] right-[-12px]">
             {add ? (
               <div className="h-full w-full flex flex-col items-center gap-y-5 py-10">
-                <img src={check} />
-                <h3 className="font-bold text-2xl w-[40%] text-center">
+                <img src={check} className="h-[10dvh]" />
+                <h3 className="font-bold text-2xl w-[65%] text-center">
                   Added Successfully
                 </h3>
-                <button onClick={() => setAdd(!add)} className="outline-none">
+                <button
+                  onClick={() => setAdd(!add)}
+                  className="outline-none font-semibold opacity-50 hover:opacity-90"
+                >
                   click to add more
                 </button>
               </div>
